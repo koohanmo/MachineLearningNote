@@ -177,6 +177,7 @@ def cnn_layer_with_BN(input_tensor,
             #tf.summary.image('activations', tf.reshape(activations, [-1,28,28,1]))
 
         with tf.name_scope('max_pool'):
+            tf.nn.pool
             pooledImage = tf.nn.max_pool(activations, ksize=pool_dim, strides=pool_stride, padding='SAME')
             #tf.summary.image('max_pool', pooledImage)
 
